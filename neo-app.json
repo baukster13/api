@@ -1,0 +1,69 @@
+{
+  "routes": [
+    {
+      "path": "services/userapi/",
+      "target": {
+        "type": "service",
+        "name": "userapi"
+      }
+    },
+    {
+      "path": "Sandbox/",
+      "target": {
+        "type": "destination",
+        "name": "Sandbox"
+      }
+    },
+    {
+      "path": "Development",
+      "target": {
+        "type": "destination",
+        "name": "Development"
+      }
+    },
+    {
+      "path": "Development_new/",
+      "target": {
+        "type": "destination",
+        "name": "Development_new"
+      }
+    },
+    {
+      "path": "Quality/",
+      "target": {
+        "type": "destination",
+        "name": "Quality"
+      }
+    },
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    }
+  ],
+  "securityConstraints": [
+        {
+            "permission": "applicationAccess",
+            "description": "application access",
+            "protectedPaths": [
+                "/"
+            ],
+            "excludedPaths": [
+                "/logout/**"
+            ]
+        }
+    ]
+}
