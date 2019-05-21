@@ -8,31 +8,10 @@
       }
     },
     {
-      "path": "Sandbox/",
+      "path": "OData/",
       "target": {
         "type": "destination",
-        "name": "Sandbox"
-      }
-    },
-    {
-      "path": "Development",
-      "target": {
-        "type": "destination",
-        "name": "Development"
-      }
-    },
-    {
-      "path": "Development_new/",
-      "target": {
-        "type": "destination",
-        "name": "Development_new"
-      }
-    },
-    {
-      "path": "Quality/",
-      "target": {
-        "type": "destination",
-        "name": "Quality"
+        "name": "OData"
       }
     },
     {
